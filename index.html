@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>COPA MILLONARIA BALCON DEL LLANO - Torneo Automatizado</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- CONTENIDO DEL TORNEO -->
+  <div id="sistemaTorneo">
+
+    <header class="site-header">
+      <nav id="mainNav" aria-label="Menu principal">
+        <a href="#inicio" data-section="inicio" class="active">Inicio</a>
+        <a href="#partidos" data-section="partidos">Partidos</a>
+        <a href="#clasificacion" data-section="clasificacion">Clasificación</a>
+        <a href="#jugados" data-section="jugados">Partidos Jugados</a>
+        <a href="#octavos" data-section="octavos">Tercera Fase (Octavos de Final)</a>
+      </nav>
+    </header>
+
+    <main class="contenedor-principal">
+
+      <!-- INICIO -->
+<section id="inicio" class="section visible">
+  
+
+  <!-- HISTORIAS -->
+  <div class="historias"></div>
+
+  <!-- BANNER -->
+  <div class="banner"></div>
+
+  <!-- GRID -->
+  <div class="grid-inicio">
+    <div class="principal"></div>
+
+    <div class="destacado">
+      <h3>Lo más destacado</h3>
+      <ul></ul>
+    </div>
+  </div>
+
+  <!-- MOMENTOS -->
+  <h3>Momentos</h3>
+  <div class="momentos"></div>
+
+  <!-- VIDEOS -->
+  <h3>Resúmenes en video</h3>
+  <div class="videos"></div>
+
+  <!-- PORTADA -->
+  <h3>En portada</h3>
+  <div class="portada"></div>
+
+</section>
+
+      <!-- PARTIDOS -->
+      <section id="partidos" class="section">
+        <h2>Partidos Programados</h2>
+        <div id="listaPartidos" class="partidos-lista"></div>
+      </section>
+
+      <!-- CLASIFICACIÓN -->
+      <section id="clasificacion" class="section">
+        <h2>Clasificación</h2>
+
+        <h3>Grupo A</h3>
+        <div class="table-container">
+          <table id="tablaGrupoA">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- PARTIDOS JUGADOS -->
+      <section id="jugados" class="section">
+        <h2>Partidos Jugados</h2>
+
+        <div class="filtros">
+          <label for="fechaFiltro">Buscar por fecha:</label>
+          <input type="date" id="fechaFiltro" />
+          <button id="btnFiltrarJugados">Filtrar</button>
+          <button id="btnResetFiltro">Restablecer</button>
+        </div>
+
+        <div id="listaJugados" class="partidos-lista"></div>
+      </section>
+
+      <!-- OCTAVOS -->
+      <section id="octavos" class="section">
+        <h2>Tercera Fase (Octavos de Final)</h2>
+        <div id="listaOctavos" class="partidos-lista"></div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <small>COPA MILLONARIA BALCÓN DEL LLANO © 2025</small>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
