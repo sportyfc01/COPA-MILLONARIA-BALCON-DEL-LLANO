@@ -425,8 +425,8 @@ html, body {
 /* Estilo para los escudos en la tabla */
 #tablaGrupoA img, 
 .partidos-lista img {
-    width: 40px;          /* Ancho del escudo */
-    height: 40px;         /* Alto del escudo */
+    width: 90px;          /* Ancho del escudo */
+    height: 80px;         /* Alto del escudo */
     object-fit: contain;  /* Evita que se deforme la imagen */
     margin-right: 12px;   /* Espacio entre el escudo y el nombre */
     vertical-align: middle; /* Alinea el escudo con el centro del texto */
